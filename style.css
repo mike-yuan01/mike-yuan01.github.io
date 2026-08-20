@@ -1,15 +1,9 @@
 :root {
-
     --background: #f7f7f4;
-
     --text: #161616;
-
     --muted: #686868;
-
     --line: #d8d8d3;
-
     --navy: #17283b;
-
     --max-width: 1180px;
 }
 
@@ -27,7 +21,6 @@ html {
 }
 
 body {
-
     margin: 0;
 
     background-color: var(--background);
@@ -50,21 +43,17 @@ body {
 
 
 a {
-
     color: inherit;
-
     text-decoration: none;
 }
 
 
 a:hover {
-
     color: var(--navy);
 }
 
 
 .container {
-
     width: min(
         calc(100% - 64px),
         var(--max-width)
@@ -79,7 +68,6 @@ a:hover {
 ========================= */
 
 .site-header {
-
     position: sticky;
 
     top: 0;
@@ -95,8 +83,7 @@ a:hover {
 
 
 .nav-container {
-
-    min-height: 76px;
+    min-height: 74px;
 
     display: flex;
 
@@ -107,7 +94,6 @@ a:hover {
 
 
 .nav-name {
-
     font-size: 17px;
 
     font-weight: 600;
@@ -117,7 +103,6 @@ a:hover {
 
 
 .nav-links {
-
     display: flex;
 
     align-items: center;
@@ -127,7 +112,6 @@ a:hover {
 
 
 .nav-links a {
-
     color: var(--muted);
 
     font-size: 14px;
@@ -137,7 +121,6 @@ a:hover {
 
 
 .nav-links a:hover {
-
     color: var(--text);
 }
 
@@ -147,36 +130,32 @@ a:hover {
 ========================= */
 
 .hero {
-
-    padding: 105px 0 110px;
+    padding: 88px 0 92px;
 
     border-bottom: 1px solid var(--line);
 }
 
 
 .hero-grid {
-
     display: grid;
 
     grid-template-columns:
         minmax(0, 1fr)
-        300px;
+        285px;
 
-    align-items: center;
+    align-items: start;
 
-    gap: 88px;
+    gap: 78px;
 }
 
 
 .hero-content {
-
-    max-width: 790px;
+    max-width: 760px;
 }
 
 
 .eyebrow {
-
-    margin: 0 0 22px;
+    margin: 5px 0 20px;
 
     color: var(--muted);
 
@@ -191,16 +170,15 @@ a:hover {
 
 
 .hero h1 {
-
     margin: 0;
 
     font-size: clamp(
-        50px,
-        5.7vw,
-        70px
+        48px,
+        5.35vw,
+        66px
     );
 
-    line-height: 1.04;
+    line-height: 1.03;
 
     letter-spacing: -0.038em;
 
@@ -209,20 +187,18 @@ a:hover {
 
 
 .hero h1 span {
-
-    color: #777;
+    color: #7a7a7a;
 
     font-weight: 400;
 }
 
 
 .hero h2 {
-
-    margin: 28px 0 0;
+    margin: 24px 0 0;
 
     color: var(--navy);
 
-    font-size: 22px;
+    font-size: 21px;
 
     font-weight: 400;
 
@@ -231,32 +207,29 @@ a:hover {
 
 
 .hero-current {
-
-    margin: 34px 0 0;
+    margin: 30px 0 0;
 
     color: var(--muted);
 
-    font-size: 17px;
+    font-size: 16px;
 
-    line-height: 1.6;
+    line-height: 1.55;
 }
 
 
 .hero-links {
-
     display: flex;
 
-    gap: 30px;
+    gap: 28px;
 
     flex-wrap: wrap;
 
-    margin-top: 38px;
+    margin-top: 32px;
 }
 
 
 .hero-links a {
-
-    padding-bottom: 4px;
+    padding-bottom: 3px;
 
     border-bottom: 1px solid var(--text);
 
@@ -271,22 +244,22 @@ a:hover {
 ========================= */
 
 .hero-photo-wrap {
+    width: 285px;
 
-    width: 300px;
+    margin-top: 5px;
 }
 
 
 .hero-photo {
-
     display: block;
 
-    width: 300px;
+    width: 285px;
 
-    height: 375px;
+    height: 330px;
 
     object-fit: cover;
 
-    object-position: center top;
+    object-position: center 18%;
 
     border: none;
 }
@@ -297,15 +270,13 @@ a:hover {
 ========================= */
 
 .section {
-
-    padding: 104px 0;
+    padding: 88px 0;
 
     border-bottom: 1px solid var(--line);
 }
 
 
 .section-grid {
-
     display: grid;
 
     grid-template-columns: 160px 1fr;
@@ -316,7 +287,6 @@ a:hover {
 
 .section-label p,
 .section-heading p {
-
     margin: 0;
 
     color: var(--muted);
@@ -332,8 +302,7 @@ a:hover {
 
 
 .section-heading {
-
-    padding-bottom: 28px;
+    padding-bottom: 27px;
 
     border-bottom: 1px solid var(--line);
 }
@@ -344,14 +313,12 @@ a:hover {
 ========================= */
 
 .about-content {
-
     max-width: 790px;
 }
 
 
 .about-content p {
-
-    margin: 0 0 24px;
+    margin: 0 0 22px;
 
     color: var(--muted);
 
@@ -362,14 +329,13 @@ a:hover {
 
 
 .about-content .about-lead {
-
     color: var(--text);
 
-    font-size: 26px;
+    font-size: 23px;
 
-    line-height: 1.5;
+    line-height: 1.52;
 
-    letter-spacing: -0.015em;
+    letter-spacing: -0.012em;
 }
 
 
@@ -378,7 +344,6 @@ a:hover {
 ========================= */
 
 .experience-item {
-
     display: grid;
 
     grid-template-columns:
@@ -388,7 +353,7 @@ a:hover {
 
     column-gap: 34px;
 
-    padding: 58px 0;
+    padding: 52px 0;
 
     border-bottom: 1px solid var(--line);
 
@@ -397,7 +362,6 @@ a:hover {
 
 
 .experience-item:last-child {
-
     border-bottom: none;
 
     padding-bottom: 0;
@@ -405,7 +369,6 @@ a:hover {
 
 
 .experience-date {
-
     padding-top: 9px;
 
     color: var(--muted);
@@ -421,10 +384,9 @@ a:hover {
 ========================= */
 
 .company-logo-column {
-
     width: 165px;
 
-    min-height: 86px;
+    min-height: 82px;
 
     display: flex;
 
@@ -437,7 +399,6 @@ a:hover {
 
 
 .company-logo {
-
     display: block;
 
     width: auto;
@@ -446,7 +407,7 @@ a:hover {
 
     max-width: 155px;
 
-    max-height: 76px;
+    max-height: 74px;
 
     object-fit: contain;
 
@@ -459,18 +420,16 @@ a:hover {
 ========================= */
 
 .experience-content {
-
     max-width: 720px;
 }
 
 
 .experience-content h3 {
-
     margin: 0;
 
     color: var(--text);
 
-    font-size: 25px;
+    font-size: 24px;
 
     font-weight: 600;
 
@@ -481,7 +440,6 @@ a:hover {
 
 
 .company-short {
-
     color: var(--muted);
 
     font-weight: 400;
@@ -489,7 +447,6 @@ a:hover {
 
 
 .role {
-
     margin: 8px 0 0;
 
     color: var(--text);
@@ -501,7 +458,6 @@ a:hover {
 
 
 .location {
-
     margin: 5px 0 0;
 
     color: var(--muted);
@@ -515,16 +471,14 @@ a:hover {
 ========================= */
 
 .experience-description {
-
-    margin-top: 27px;
+    margin-top: 25px;
 
     max-width: 700px;
 }
 
 
 .experience-description p {
-
-    margin: 0 0 15px;
+    margin: 0 0 14px;
 
     color: var(--muted);
 
@@ -539,18 +493,16 @@ a:hover {
 ========================= */
 
 .selected-block {
+    margin-top: 28px;
 
-    margin-top: 30px;
-
-    padding-top: 25px;
+    padding-top: 23px;
 
     border-top: 1px solid var(--line);
 }
 
 
 .selected-label {
-
-    margin: 0 0 18px;
+    margin: 0 0 17px;
 
     color: var(--muted);
 
@@ -565,7 +517,6 @@ a:hover {
 
 
 .selected-row {
-
     display: flex;
 
     justify-content: space-between;
@@ -577,7 +528,6 @@ a:hover {
 
 
 .selected-row h4 {
-
     margin: 0;
 
     font-size: 18px;
@@ -589,7 +539,6 @@ a:hover {
 
 
 .selected-row p {
-
     margin: 5px 0 0;
 
     color: var(--muted);
@@ -599,7 +548,6 @@ a:hover {
 
 
 .selected-code {
-
     margin: 2px 0 0 !important;
 
     color: var(--muted);
@@ -615,15 +563,13 @@ a:hover {
 ========================= */
 
 .research-item {
-
-    padding: 19px 0;
+    padding: 18px 0;
 
     border-top: 1px solid var(--line);
 }
 
 
 .research-item:first-of-type {
-
     padding-top: 0;
 
     border-top: none;
@@ -631,13 +577,11 @@ a:hover {
 
 
 .research-item:last-child {
-
     padding-bottom: 0;
 }
 
 
 .research-item h4 {
-
     margin: 0;
 
     font-size: 18px;
@@ -649,7 +593,6 @@ a:hover {
 
 
 .research-type {
-
     margin: 4px 0 10px;
 
     color: var(--navy);
@@ -661,7 +604,6 @@ a:hover {
 
 
 .research-description {
-
     margin: 0;
 
     color: var(--muted);
@@ -677,7 +619,6 @@ a:hover {
 ========================= */
 
 .education-item {
-
     display: grid;
 
     grid-template-columns:
@@ -686,14 +627,13 @@ a:hover {
 
     gap: 58px;
 
-    padding: 54px 0;
+    padding: 50px 0;
 
     border-bottom: 1px solid var(--line);
 }
 
 
 .education-item:last-child {
-
     border-bottom: none;
 
     padding-bottom: 0;
@@ -701,7 +641,6 @@ a:hover {
 
 
 .education-date {
-
     padding-top: 6px;
 
     color: var(--muted);
@@ -711,16 +650,14 @@ a:hover {
 
 
 .education-content {
-
     max-width: 800px;
 }
 
 
 .education-content h3 {
-
     margin: 0;
 
-    font-size: 25px;
+    font-size: 24px;
 
     font-weight: 600;
 
@@ -731,7 +668,6 @@ a:hover {
 
 
 .degree {
-
     margin: 8px 0 0;
 
     font-size: 17px;
@@ -739,13 +675,11 @@ a:hover {
 
 
 .education-details {
-
-    margin-top: 21px;
+    margin-top: 19px;
 }
 
 
 .education-details p {
-
     margin: 5px 0;
 
     color: var(--muted);
@@ -759,7 +693,6 @@ a:hover {
 ========================= */
 
 .additional-grid {
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -769,7 +702,6 @@ a:hover {
 
 
 .additional-grid p {
-
     margin: 0;
 
     color: var(--muted);
@@ -779,7 +711,6 @@ a:hover {
 
 
 .additional-title {
-
     margin-bottom: 10px !important;
 
     color: var(--text) !important;
@@ -799,13 +730,11 @@ a:hover {
 ========================= */
 
 .site-footer {
-
-    padding: 40px 0 48px;
+    padding: 38px 0 46px;
 }
 
 
 .footer-content {
-
     display: flex;
 
     justify-content: space-between;
@@ -816,7 +745,6 @@ a:hover {
 
 .footer-content p,
 .footer-content a {
-
     margin: 0;
 
     color: var(--muted);
@@ -832,7 +760,6 @@ a:hover {
 @media (max-width: 950px) {
 
     .hero-grid {
-
         grid-template-columns:
             minmax(0, 1fr)
             235px;
@@ -842,21 +769,18 @@ a:hover {
 
 
     .hero-photo-wrap {
-
         width: 235px;
     }
 
 
     .hero-photo {
-
         width: 235px;
 
-        height: 295px;
+        height: 285px;
     }
 
 
     .experience-item {
-
         grid-template-columns:
             105px
             135px
@@ -867,17 +791,16 @@ a:hover {
 
 
     .company-logo-column {
-
         width: 135px;
     }
 
 
     .company-logo {
-
         max-width: 125px;
 
         max-height: 66px;
     }
+
 }
 
 
@@ -888,7 +811,6 @@ a:hover {
 @media (max-width: 760px) {
 
     .container {
-
         width: min(
             calc(100% - 34px),
             var(--max-width)
@@ -897,83 +819,70 @@ a:hover {
 
 
     .site-header {
-
         position: static;
     }
 
 
     .nav-container {
-
         min-height: 64px;
     }
 
 
     .nav-links {
-
         gap: 18px;
     }
 
 
     .nav-links a {
-
         font-size: 13px;
     }
 
 
     .nav-links a:first-child {
-
         display: none;
     }
 
 
     .hero {
-
-        padding: 72px 0 78px;
+        padding: 68px 0 72px;
     }
 
 
     .hero-grid {
-
         grid-template-columns: 1fr;
 
-        gap: 42px;
+        gap: 38px;
     }
 
 
     .hero h1 {
-
-        font-size: 45px;
+        font-size: 44px;
     }
 
 
     .hero h2 {
-
         font-size: 20px;
     }
 
 
     .hero-photo-wrap {
-
         width: 210px;
     }
 
 
     .hero-photo {
-
         width: 210px;
 
-        height: 265px;
+        height: 250px;
     }
 
 
     .section {
-
-        padding: 76px 0;
+        padding: 72px 0;
     }
 
 
     .section-grid {
-
         grid-template-columns: 1fr;
 
         gap: 24px;
@@ -981,23 +890,20 @@ a:hover {
 
 
     .experience-item {
-
         grid-template-columns: 1fr;
 
         row-gap: 18px;
 
-        padding: 44px 0;
+        padding: 42px 0;
     }
 
 
     .experience-date {
-
         padding-top: 0;
     }
 
 
     .company-logo-column {
-
         width: 150px;
 
         min-height: auto;
@@ -1005,7 +911,6 @@ a:hover {
 
 
     .company-logo {
-
         max-width: 145px;
 
         max-height: 72px;
@@ -1013,35 +918,30 @@ a:hover {
 
 
     .experience-content h3 {
-
         font-size: 22px;
     }
 
 
     .education-item {
-
         grid-template-columns: 1fr;
 
         gap: 18px;
 
-        padding: 42px 0;
+        padding: 40px 0;
     }
 
 
     .education-content h3 {
-
         font-size: 22px;
     }
 
 
     .about-content .about-lead {
-
-        font-size: 22px;
+        font-size: 21px;
     }
 
 
     .selected-row {
-
         flex-direction: column;
 
         gap: 7px;
@@ -1049,7 +949,6 @@ a:hover {
 
 
     .additional-grid {
-
         grid-template-columns: 1fr;
 
         gap: 34px;
@@ -1057,9 +956,9 @@ a:hover {
 
 
     .footer-content {
-
         align-items: flex-start;
 
         gap: 20px;
     }
+
 }
