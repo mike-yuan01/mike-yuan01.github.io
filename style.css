@@ -301,6 +301,11 @@ a:hover {
     max-height: 72px;
     object-fit: contain;
     object-position: left top;
+
+    /* 让白底尽量融入背景 */
+    mix-blend-mode: multiply;
+    opacity: 0.92;
+    filter: saturate(0.98) contrast(1.02);
 }
 
 
