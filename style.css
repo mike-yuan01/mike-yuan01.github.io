@@ -4,8 +4,14 @@
     --muted: #646464;
     --line: #d8d8d3;
     --accent: #1c2a3a;
+
     --max-width: 1160px;
 }
+
+
+/* =========================
+   Base
+========================= */
 
 * {
     box-sizing: border-box;
@@ -17,11 +23,15 @@ html {
 
 body {
     margin: 0;
+
     background: var(--bg);
     color: var(--text);
+
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 17px;
     line-height: 1.68;
+
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -42,38 +52,49 @@ a:hover {
 
 
 /* =========================
-   Header
+   Navigation
 ========================= */
 
 .site-header {
     position: sticky;
+
     top: 0;
+
     z-index: 100;
+
     background: rgba(247, 247, 245, 0.97);
+
     border-bottom: 1px solid var(--line);
 }
 
 .nav-container {
-    min-height: 72px;
+    min-height: 74px;
+
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-name {
     font-size: 17px;
+
     font-weight: 600;
+
     letter-spacing: 0.01em;
 }
 
 .nav-links {
     display: flex;
-    gap: 32px;
+
+    gap: 34px;
 }
 
 .nav-links a {
     font-size: 14px;
+
     color: var(--muted);
+
     transition: color 0.2s ease;
 }
 
@@ -88,69 +109,97 @@ a:hover {
 
 .hero {
     padding: 120px 0 125px;
+
     border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
     display: grid;
+
     grid-template-columns: 1fr auto;
+
     gap: 80px;
+
     align-items: center;
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 860px;
 }
 
 .eyebrow {
-    margin: 0 0 22px;
+    margin: 0 0 24px;
+
     color: var(--muted);
+
     font-size: 13px;
+
     font-weight: 600;
+
     text-transform: uppercase;
-    letter-spacing: 0.13em;
+
+    letter-spacing: 0.14em;
 }
 
 .hero h1 {
     margin: 0;
+
     max-width: 900px;
-    font-size: clamp(48px, 6vw, 68px);
-    line-height: 1.06;
+
+    font-size: clamp(50px, 6vw, 70px);
+
+    line-height: 1.05;
+
     letter-spacing: -0.035em;
+
     font-weight: 500;
 }
 
 .hero h1 span {
     color: var(--muted);
+
     font-weight: 400;
 }
 
 .hero h2 {
     margin: 28px 0 0;
+
     font-size: 23px;
+
     line-height: 1.45;
+
     font-weight: 400;
+
     color: var(--accent);
 }
 
 .hero-current {
     margin: 36px 0 0;
+
     color: var(--muted);
+
     font-size: 17px;
+
     line-height: 1.6;
 }
 
 .hero-links {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 30px;
+
     margin-top: 40px;
 }
 
 .hero-links a {
     padding-bottom: 4px;
+
     border-bottom: 1px solid var(--text);
+
     font-size: 14px;
+
     font-weight: 500;
 }
 
@@ -161,46 +210,61 @@ a:hover {
 
 .hero-photo-wrap {
     width: 235px;
+
     flex-shrink: 0;
 }
 
 .hero-photo {
     display: block;
+
     width: 235px;
+
     height: 295px;
+
     object-fit: cover;
+
     object-position: center;
+
     border: 1px solid var(--line);
 }
 
 
 /* =========================
-   Sections
+   Main Sections
 ========================= */
 
 .section {
     padding: 110px 0;
+
     border-bottom: 1px solid var(--line);
 }
 
 .section-grid {
     display: grid;
+
     grid-template-columns: 180px 1fr;
+
     gap: 60px;
 }
 
 .section-label p,
 .section-heading p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 13px;
+
     font-weight: 600;
+
     text-transform: uppercase;
+
     letter-spacing: 0.14em;
 }
 
 .section-heading {
     padding-bottom: 30px;
+
     border-bottom: 1px solid var(--line);
 }
 
@@ -210,143 +274,243 @@ a:hover {
 ========================= */
 
 .about-content {
-    max-width: 790px;
+    max-width: 800px;
 }
 
 .about-content p {
     margin: 0 0 24px;
+
     color: var(--muted);
+
     font-size: 17px;
+
     line-height: 1.72;
 }
 
 .about-content .about-lead {
     color: var(--text);
+
     font-size: 25px;
+
     line-height: 1.5;
+
     letter-spacing: -0.012em;
 }
 
 
 /* =========================
-   Experience
+   Experience Layout
 ========================= */
 
 .experience-item {
     display: grid;
+
     grid-template-columns: 180px 1fr;
+
     gap: 60px;
-    padding: 52px 0;
+
+    padding: 54px 0;
+
     border-bottom: 1px solid var(--line);
 }
 
 .experience-item:last-child {
     border-bottom: none;
+
     padding-bottom: 0;
 }
 
 .experience-date p {
-    margin: 5px 0 0;
+    margin: 6px 0 0;
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
 .experience-main {
-    max-width: 800px;
+    max-width: 820px;
 }
 
 
 /* =========================
-   Company Heading + Logo
+   Company Header
 ========================= */
 
 .company-heading {
     display: flex;
-    align-items: flex-start;
-    gap: 18px;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* =========================
+   Logo Container
+========================= */
+
+.company-logo-box {
+    width: 84px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
 }
 
 .company-logo {
-    width: 52px;
-    height: 52px;
+    display: block;
+
+    width: auto;
+
+    height: auto;
+
+    max-width: 70px;
+
+    max-height: 44px;
+
     object-fit: contain;
-    flex-shrink: 0;
+
+    object-position: center;
 }
+
+
+/* Wider wordmark logos */
+.logo-wide {
+    max-width: 74px;
+
+    max-height: 38px;
+}
+
+
+/* Bank of America tends to have a
+   very wide visual footprint */
+.logo-boa {
+    max-width: 70px;
+
+    max-height: 38px;
+}
+
+
+/* =========================
+   Company Text
+========================= */
 
 .experience-main h3 {
     margin: 0;
+
     font-size: 24px;
+
     line-height: 1.35;
+
     font-weight: 600;
+
     letter-spacing: -0.015em;
 }
 
 .company-short {
     color: var(--muted);
+
     font-weight: 400;
 }
 
 .role {
-    margin: 7px 0 0;
+    margin: 8px 0 0;
+
     font-size: 17px;
+
     color: var(--text);
 }
 
 .location {
     margin: 5px 0 0;
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
+
+/* =========================
+   Experience Description
+========================= */
+
 .experience-description {
-    margin-top: 28px;
-    max-width: 750px;
+    margin-top: 30px;
+
+    max-width: 760px;
 }
 
 .experience-description p {
     margin: 0 0 16px;
+
     color: var(--muted);
+
     font-size: 16px;
+
     line-height: 1.72;
 }
 
 
 /* =========================
-   Selected Transactions
+   Selected Transaction
 ========================= */
 
 .selected-work {
-    margin-top: 32px;
-    padding-top: 26px;
+    margin-top: 34px;
+
+    padding-top: 27px;
+
     border-top: 1px solid var(--line);
 }
 
 .selected-label {
     margin: 0 0 20px;
+
     color: var(--muted);
+
     font-size: 12px;
+
     font-weight: 600;
+
     text-transform: uppercase;
+
     letter-spacing: 0.12em;
 }
 
 .selected-title-row {
     display: flex;
+
     align-items: flex-start;
+
     justify-content: space-between;
+
     gap: 30px;
 }
 
 .selected-title-row h4 {
     margin: 0;
+
     font-size: 18px;
+
     font-weight: 600;
+
     line-height: 1.4;
 }
 
 .selected-title-row p {
     margin: 5px 0 0;
+
     color: var(--muted);
+
     font-size: 15px;
 }
 
@@ -356,7 +520,9 @@ a:hover {
 
 .selected-meta p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 13px;
 }
 
@@ -366,11 +532,12 @@ a:hover {
 ========================= */
 
 .research-work {
-    margin-top: 32px;
+    margin-top: 34px;
 }
 
 .research-item {
-    padding: 22px 0;
+    padding: 23px 0;
+
     border-bottom: 1px solid var(--line);
 }
 
@@ -380,28 +547,39 @@ a:hover {
 
 .research-item:last-child {
     border-bottom: none;
+
     padding-bottom: 0;
 }
 
 .research-item h4 {
     margin: 0;
+
     font-size: 18px;
+
     font-weight: 600;
+
     line-height: 1.4;
 }
 
 .research-subtitle {
     margin: 5px 0 12px;
+
     color: var(--accent);
+
     font-size: 14px;
+
     font-weight: 500;
 }
 
 .research-item > p:last-child {
     margin: 0;
-    max-width: 720px;
+
+    max-width: 730px;
+
     color: var(--muted);
+
     font-size: 15px;
+
     line-height: 1.7;
 }
 
@@ -412,33 +590,45 @@ a:hover {
 
 .education-item {
     display: grid;
+
     grid-template-columns: 180px 1fr;
+
     gap: 60px;
-    padding: 52px 0;
+
+    padding: 54px 0;
+
     border-bottom: 1px solid var(--line);
 }
 
 .education-item:last-child {
     border-bottom: none;
+
     padding-bottom: 0;
 }
 
 .education-date p {
-    margin: 5px 0 0;
+    margin: 6px 0 0;
+
     color: var(--muted);
+
     font-size: 14px;
 }
 
 .education-main h3 {
     margin: 0;
+
     font-size: 24px;
+
     font-weight: 600;
+
     line-height: 1.35;
+
     letter-spacing: -0.015em;
 }
 
 .degree {
     margin: 8px 0 0;
+
     font-size: 17px;
 }
 
@@ -448,7 +638,9 @@ a:hover {
 
 .education-details p {
     margin: 6px 0;
+
     color: var(--muted);
+
     font-size: 15px;
 }
 
@@ -459,22 +651,31 @@ a:hover {
 
 .additional-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 55px;
 }
 
 .additional-grid p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 16px;
 }
 
 .additional-label {
     margin-bottom: 11px !important;
+
     color: var(--text) !important;
+
     font-size: 13px !important;
+
     font-weight: 600;
+
     text-transform: uppercase;
+
     letter-spacing: 0.11em;
 }
 
@@ -489,14 +690,18 @@ a:hover {
 
 .footer-content {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 .footer-content p,
 .footer-content a {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 13px;
 }
 
@@ -513,6 +718,7 @@ a:hover {
 
     .hero-grid {
         grid-template-columns: 1fr;
+
         gap: 50px;
     }
 
@@ -522,6 +728,7 @@ a:hover {
 
     .hero-photo {
         width: 210px;
+
         height: 265px;
     }
 
@@ -535,7 +742,10 @@ a:hover {
 @media (max-width: 760px) {
 
     .container {
-        width: min(calc(100% - 34px), var(--max-width));
+        width: min(
+            calc(100% - 34px),
+            var(--max-width)
+        );
     }
 
     .site-header {
@@ -580,6 +790,7 @@ a:hover {
 
     .hero-photo {
         width: 180px;
+
         height: 225px;
     }
 
@@ -591,6 +802,7 @@ a:hover {
     .experience-item,
     .education-item {
         grid-template-columns: 1fr;
+
         gap: 20px;
     }
 
@@ -622,23 +834,45 @@ a:hover {
         font-size: 22px;
     }
 
+    .company-heading {
+        gap: 16px;
+    }
+
+    .company-logo-box {
+        width: 68px;
+
+        height: 50px;
+    }
+
     .company-logo {
-        width: 44px;
-        height: 44px;
+        max-width: 58px;
+
+        max-height: 38px;
+    }
+
+    .logo-wide,
+    .logo-boa {
+        max-width: 60px;
+
+        max-height: 34px;
     }
 
     .selected-title-row {
         flex-direction: column;
+
         gap: 8px;
     }
 
     .additional-grid {
         grid-template-columns: 1fr;
+
         gap: 34px;
     }
 
     .footer-content {
         align-items: flex-start;
+
         gap: 24px;
     }
+
 }
