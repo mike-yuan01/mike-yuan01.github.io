@@ -22,22 +22,12 @@ html {
 
 body {
     margin: 0;
-
     background-color: var(--background);
-
     color: var(--text);
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-
     line-height: 1.7;
-
     -webkit-font-smoothing: antialiased;
-
     text-rendering: optimizeLegibility;
 }
 
@@ -51,11 +41,7 @@ a:hover {
 }
 
 .container {
-    width: min(
-        calc(100% - 64px),
-        var(--max-width)
-    );
-
+    width: min(calc(100% - 64px), var(--max-width));
     margin: 0 auto;
 }
 
@@ -68,23 +54,20 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-
-    background: rgba(247, 247, 244, 0.97);
-
-    border-bottom: 1px solid var(--line);
-
-    backdrop-filter: blur(7px);
+    background: rgba(236, 239, 242, 0.97);
+    border-bottom: 1px solid #d2d6da;
+    backdrop-filter: blur(8px);
 }
 
 .nav-container {
-    min-height: 72px;
-
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-name {
+    color: #1d2731;
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -97,13 +80,13 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--muted);
+    color: #5d6670;
     font-size: 14px;
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: var(--text);
+    color: #111820;
 }
 
 
@@ -112,20 +95,14 @@ a:hover {
 ========================= */
 
 .hero {
-    padding: 84px 0 88px;
-
+    padding: 72px 0 72px;
     border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
     display: grid;
-
-    grid-template-columns:
-        minmax(0, 1fr)
-        285px;
-
+    grid-template-columns: minmax(0, 1fr) 285px;
     align-items: start;
-
     gap: 78px;
 }
 
@@ -134,80 +111,53 @@ a:hover {
 }
 
 .eyebrow {
-    margin: 5px 0 20px;
-
+    margin: 3px 0 18px;
     color: var(--muted);
-
     font-size: 13px;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
     letter-spacing: 0.14em;
 }
 
 .hero h1 {
     margin: 0;
-
-    font-size: clamp(
-        48px,
-        5.35vw,
-        66px
-    );
-
+    font-size: clamp(48px, 5.35vw, 66px);
     line-height: 1.03;
-
     letter-spacing: -0.038em;
-
     font-weight: 500;
 }
 
 .hero h1 span {
     color: #7a7a7a;
-
     font-weight: 400;
 }
 
 .hero h2 {
-    margin: 24px 0 0;
-
+    margin: 22px 0 0;
     color: var(--navy);
-
     font-size: 21px;
-
     font-weight: 400;
-
     line-height: 1.45;
 }
 
 .hero-current {
-    margin: 30px 0 0;
-
+    margin: 27px 0 0;
     color: var(--muted);
-
     font-size: 16px;
-
     line-height: 1.55;
 }
 
 .hero-links {
     display: flex;
-
     gap: 28px;
-
     flex-wrap: wrap;
-
-    margin-top: 32px;
+    margin-top: 29px;
 }
 
 .hero-links a {
     padding-bottom: 3px;
-
     border-bottom: 1px solid var(--text);
-
     font-size: 14px;
-
     font-weight: 500;
 }
 
@@ -218,19 +168,14 @@ a:hover {
 
 .hero-photo-wrap {
     width: 285px;
-
     margin-top: 5px;
 }
 
 .hero-photo {
     display: block;
-
     width: 285px;
-
     height: 330px;
-
     object-fit: cover;
-
     object-position: center 18%;
 }
 
@@ -240,61 +185,47 @@ a:hover {
 ========================= */
 
 .section {
-    padding: 68px 0;
-
+    padding: 58px 0;
     border-bottom: 1px solid var(--line);
 }
 
 .experience-section {
-    padding: 62px 0;
+    padding: 58px 0;
 }
 
 .section-grid {
     display: grid;
-
-    grid-template-columns: 160px 1fr;
-
-    gap: 58px;
+    grid-template-columns: 180px 1fr;
+    gap: 46px;
 }
 
 
-/* Small labels such as ABOUT */
+/* Small labels such as ABOUT / ADDITIONAL */
 .section-label p {
     margin: 0;
-
-    color: var(--muted);
-
-    font-size: 14px;
-
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.3;
     font-weight: 600;
-
     text-transform: uppercase;
-
-    letter-spacing: 0.13em;
+    letter-spacing: 0.11em;
 }
 
 
 /* Main Section Titles */
 .section-heading {
-    padding-bottom: 20px;
-
+    padding-bottom: 19px;
     border-bottom: 1px solid var(--line);
 }
 
 .section-heading h2 {
     margin: 0;
-
     color: var(--text);
-
     font-size: 18px;
-
     line-height: 1.3;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
-    letter-spacing: 0.11em;
+    letter-spacing: 0.10em;
 }
 
 
@@ -307,22 +238,16 @@ a:hover {
 }
 
 .about-content p {
-    margin: 0 0 22px;
-
+    margin: 0 0 20px;
     color: var(--muted);
-
     font-size: 17px;
-
-    line-height: 1.72;
+    line-height: 1.7;
 }
 
 .about-content .about-lead {
     color: var(--text);
-
     font-size: 23px;
-
-    line-height: 1.52;
-
+    line-height: 1.5;
     letter-spacing: -0.012em;
 }
 
@@ -333,34 +258,22 @@ a:hover {
 
 .experience-item {
     display: grid;
-
-    grid-template-columns:
-        115px
-        165px
-        minmax(0, 1fr);
-
+    grid-template-columns: 115px 165px minmax(0, 1fr);
     column-gap: 34px;
-
     padding: 40px 0;
-
     border-bottom: 1px solid var(--line);
-
     align-items: start;
 }
 
 .experience-item:last-child {
     border-bottom: none;
-
     padding-bottom: 4px;
 }
 
 .experience-date {
     padding-top: 9px;
-
     color: var(--muted);
-
     font-size: 14px;
-
     white-space: nowrap;
 }
 
@@ -371,31 +284,20 @@ a:hover {
 
 .company-logo-column {
     width: 165px;
-
     min-height: 76px;
-
     display: flex;
-
     align-items: flex-start;
-
     justify-content: flex-start;
-
     padding-top: 2px;
 }
 
 .company-logo {
     display: block;
-
     width: auto;
-
     height: auto;
-
     max-width: 155px;
-
     max-height: 72px;
-
     object-fit: contain;
-
     object-position: left top;
 }
 
@@ -410,39 +312,28 @@ a:hover {
 
 .experience-content h3 {
     margin: 0;
-
     color: var(--text);
-
     font-size: 24px;
-
     font-weight: 600;
-
     line-height: 1.3;
-
     letter-spacing: -0.016em;
 }
 
 .company-short {
     color: var(--muted);
-
     font-weight: 400;
 }
 
 .role {
     margin: 7px 0 0;
-
     color: var(--text);
-
     font-size: 17px;
-
     line-height: 1.5;
 }
 
 .location {
     margin: 4px 0 0;
-
     color: var(--muted);
-
     font-size: 14px;
 }
 
@@ -453,17 +344,13 @@ a:hover {
 
 .experience-description {
     margin-top: 21px;
-
     max-width: 700px;
 }
 
 .experience-description p {
     margin: 0 0 12px;
-
     color: var(--muted);
-
     font-size: 16px;
-
     line-height: 1.68;
 }
 
@@ -474,61 +361,43 @@ a:hover {
 
 .selected-block {
     margin-top: 23px;
-
     padding-top: 20px;
-
     border-top: 1px solid var(--line);
 }
 
 .selected-label {
     margin: 0 0 15px;
-
     color: var(--muted);
-
     font-size: 12px;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
     letter-spacing: 0.12em;
 }
 
 .selected-row {
     display: flex;
-
     justify-content: space-between;
-
     align-items: flex-start;
-
     gap: 30px;
 }
 
 .selected-row h4 {
     margin: 0;
-
     font-size: 18px;
-
     line-height: 1.4;
-
     font-weight: 600;
 }
 
 .selected-row p {
     margin: 4px 0 0;
-
     color: var(--muted);
-
     font-size: 15px;
 }
 
 .selected-code {
     margin: 2px 0 0 !important;
-
     color: var(--muted);
-
     font-size: 13px !important;
-
     white-space: nowrap;
 }
 
@@ -539,13 +408,11 @@ a:hover {
 
 .research-item {
     padding: 16px 0;
-
     border-top: 1px solid var(--line);
 }
 
 .research-item:first-of-type {
     padding-top: 0;
-
     border-top: none;
 }
 
@@ -555,31 +422,22 @@ a:hover {
 
 .research-item h4 {
     margin: 0;
-
     font-size: 18px;
-
     font-weight: 600;
-
     line-height: 1.4;
 }
 
 .research-type {
     margin: 4px 0 9px;
-
     color: var(--navy);
-
     font-size: 14px;
-
     font-weight: 500;
 }
 
 .research-description {
     margin: 0;
-
     color: var(--muted);
-
     font-size: 15px;
-
     line-height: 1.68;
 }
 
@@ -590,29 +448,20 @@ a:hover {
 
 .education-item {
     display: grid;
-
-    grid-template-columns:
-        150px
-        minmax(0, 1fr);
-
+    grid-template-columns: 150px minmax(0, 1fr);
     gap: 58px;
-
     padding: 38px 0;
-
     border-bottom: 1px solid var(--line);
 }
 
 .education-item:last-child {
     border-bottom: none;
-
     padding-bottom: 4px;
 }
 
 .education-date {
     padding-top: 6px;
-
     color: var(--muted);
-
     font-size: 14px;
 }
 
@@ -622,19 +471,14 @@ a:hover {
 
 .education-content h3 {
     margin: 0;
-
     font-size: 24px;
-
     font-weight: 600;
-
     line-height: 1.35;
-
     letter-spacing: -0.015em;
 }
 
 .degree {
     margin: 7px 0 0;
-
     font-size: 17px;
 }
 
@@ -644,9 +488,7 @@ a:hover {
 
 .education-details p {
     margin: 4px 0;
-
     color: var(--muted);
-
     font-size: 15px;
 }
 
@@ -657,31 +499,22 @@ a:hover {
 
 .additional-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 60px;
 }
 
 .additional-grid p {
     margin: 0;
-
     color: var(--muted);
-
     font-size: 16px;
 }
 
 .additional-title {
     margin-bottom: 9px !important;
-
     color: var(--text) !important;
-
     font-size: 13px !important;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
     letter-spacing: 0.11em;
 }
 
@@ -696,24 +529,19 @@ a:hover {
 
 .footer-content {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
 .footer-content p,
 .footer-content a {
     margin: 0;
-
     color: var(--muted);
-
     font-size: 13px;
 }
 
 .footer-links {
     display: flex;
-
     gap: 24px;
 }
 
@@ -729,10 +557,7 @@ a:hover {
 @media (max-width: 950px) {
 
     .hero-grid {
-        grid-template-columns:
-            minmax(0, 1fr)
-            235px;
-
+        grid-template-columns: minmax(0, 1fr) 235px;
         gap: 54px;
     }
 
@@ -742,16 +567,11 @@ a:hover {
 
     .hero-photo {
         width: 235px;
-
         height: 285px;
     }
 
     .experience-item {
-        grid-template-columns:
-            105px
-            135px
-            minmax(0, 1fr);
-
+        grid-template-columns: 105px 135px minmax(0, 1fr);
         column-gap: 26px;
     }
 
@@ -761,7 +581,6 @@ a:hover {
 
     .company-logo {
         max-width: 125px;
-
         max-height: 64px;
     }
 
@@ -775,10 +594,7 @@ a:hover {
 @media (max-width: 760px) {
 
     .container {
-        width: min(
-            calc(100% - 34px),
-            var(--max-width)
-        );
+        width: min(calc(100% - 34px), var(--max-width));
     }
 
     .site-header {
@@ -807,7 +623,6 @@ a:hover {
 
     .hero-grid {
         grid-template-columns: 1fr;
-
         gap: 36px;
     }
 
@@ -825,7 +640,6 @@ a:hover {
 
     .hero-photo {
         width: 210px;
-
         height: 250px;
     }
 
@@ -836,8 +650,11 @@ a:hover {
 
     .section-grid {
         grid-template-columns: 1fr;
-
         gap: 22px;
+    }
+
+    .section-label p {
+        font-size: 16px;
     }
 
     .section-heading h2 {
@@ -846,9 +663,7 @@ a:hover {
 
     .experience-item {
         grid-template-columns: 1fr;
-
         row-gap: 16px;
-
         padding: 34px 0;
     }
 
@@ -858,13 +673,11 @@ a:hover {
 
     .company-logo-column {
         width: 150px;
-
         min-height: auto;
     }
 
     .company-logo {
         max-width: 145px;
-
         max-height: 70px;
     }
 
@@ -874,9 +687,7 @@ a:hover {
 
     .education-item {
         grid-template-columns: 1fr;
-
         gap: 16px;
-
         padding: 34px 0;
     }
 
@@ -890,27 +701,22 @@ a:hover {
 
     .selected-row {
         flex-direction: column;
-
         gap: 7px;
     }
 
     .additional-grid {
         grid-template-columns: 1fr;
-
         gap: 32px;
     }
 
     .footer-content {
         align-items: flex-start;
-
         flex-direction: column;
-
         gap: 14px;
     }
 
     .footer-links {
         flex-wrap: wrap;
-
         gap: 18px;
     }
 
