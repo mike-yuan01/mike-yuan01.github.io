@@ -95,7 +95,7 @@ a:hover {
 ========================= */
 
 .hero {
-    padding: 72px 0 72px;
+    padding: 72px 0;
     border-bottom: 1px solid var(--line);
 }
 
@@ -200,7 +200,7 @@ a:hover {
 }
 
 
-/* Small labels such as ABOUT / ADDITIONAL */
+/* Small labels */
 .section-label p {
     margin: 0;
     color: var(--text);
@@ -258,7 +258,7 @@ a:hover {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 115px 165px minmax(0, 1fr);
+    grid-template-columns: 125px 165px minmax(0, 1fr);
     column-gap: 34px;
     padding: 40px 0;
     border-bottom: 1px solid var(--line);
@@ -271,9 +271,11 @@ a:hover {
 }
 
 .experience-date {
-    padding-top: 9px;
-    color: var(--muted);
-    font-size: 14px;
+    padding-top: 7px;
+    color: #555c63;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
     white-space: nowrap;
 }
 
@@ -448,7 +450,7 @@ a:hover {
 
 .education-item {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-columns: 165px minmax(0, 1fr);
     gap: 58px;
     padding: 38px 0;
     border-bottom: 1px solid var(--line);
@@ -460,9 +462,11 @@ a:hover {
 }
 
 .education-date {
-    padding-top: 6px;
-    color: var(--muted);
-    font-size: 14px;
+    padding-top: 4px;
+    color: #555c63;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 .education-content {
@@ -571,7 +575,7 @@ a:hover {
     }
 
     .experience-item {
-        grid-template-columns: 105px 135px minmax(0, 1fr);
+        grid-template-columns: 115px 135px minmax(0, 1fr);
         column-gap: 26px;
     }
 
@@ -669,6 +673,7 @@ a:hover {
 
     .experience-date {
         padding-top: 0;
+        font-size: 15px;
     }
 
     .company-logo-column {
@@ -689,6 +694,10 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 16px;
         padding: 34px 0;
+    }
+
+    .education-date {
+        font-size: 15px;
     }
 
     .education-content h3 {
