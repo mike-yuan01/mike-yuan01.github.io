@@ -11,7 +11,7 @@
         content="Huanzhe (Mike) Yuan — Corporate Finance, Capital Markets, Research."
     >
 
-    <link rel="stylesheet" href="style.css?v=20260821-7">
+    <link rel="stylesheet" href="style.css?v=20260821-8">
 </head>
 
 <body>
@@ -361,11 +361,11 @@
         <!-- =========================
              Selected Research
         ========================== -->
-        <section class="section feature-section research-section" id="research">
+        <section class="section research-section" id="research">
 
             <div class="container">
 
-                <div class="section-heading feature-heading">
+                <div class="section-heading research-heading">
 
                     <div>
 
@@ -382,79 +382,41 @@
                 </div>
 
 
-                <div class="feature-grid">
+                <div class="research-grid">
 
 
                     <!-- BofA Research -->
-                    <article class="feature-card research-card">
+                    <article class="research-card">
 
-                        <div class="feature-top">
-
-                            <p class="feature-category">
-                                Corporate Credit Research
-                            </p>
-
-                        </div>
+                        <p class="research-category">
+                            Corporate Credit Research
+                        </p>
 
 
                         <h3>
-                            Indian Renewable Energy · USD HY Corporate Bond
+                            Indian Renewable Energy · USD HY Bond
                         </h3>
 
 
-                        <p class="feature-description">
+                        <p class="research-summary">
                             Simulated initiation of coverage on an Indian
                             renewable energy issuer in the USD high-yield
                             corporate bond market.
                         </p>
 
 
-                        <div class="feature-metrics">
+                        <div class="research-tags">
 
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Sector
-                                </p>
-
-                                <p class="metric-value">
-                                    Renewable Energy
-                                </p>
-
-                            </div>
-
-
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Asset Class
-                                </p>
-
-                                <p class="metric-value">
-                                    USD HY Bond
-                                </p>
-
-                            </div>
-
-
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Focus
-                                </p>
-
-                                <p class="metric-value">
-                                    Fundamental Credit
-                                </p>
-
-                            </div>
+                            <span>Renewable Energy</span>
+                            <span>USD HY</span>
+                            <span>Fundamental Credit</span>
 
                         </div>
 
 
-                        <div class="feature-involvement">
+                        <div class="research-body">
 
-                            <p class="feature-firm">
+                            <p class="research-firm">
                                 Bank of America Merrill Lynch · Global Research
                             </p>
 
@@ -472,15 +434,11 @@
 
 
                     <!-- Huatai Research -->
-                    <article class="feature-card research-card">
+                    <article class="research-card">
 
-                        <div class="feature-top">
-
-                            <p class="feature-category">
-                                Market &amp; Strategy Research
-                            </p>
-
-                        </div>
+                        <p class="research-category">
+                            Market &amp; Strategy Research
+                        </p>
 
 
                         <h3>
@@ -488,59 +446,25 @@
                         </h3>
 
 
-                        <p class="feature-description">
-                            Cross-border market research focused on Southeast Asia
-                            and the strategic considerations for corporate expansion
+                        <p class="research-summary">
+                            Cross-border research on Southeast Asian markets
+                            and strategic considerations for corporate expansion
                             into the region.
                         </p>
 
 
-                        <div class="feature-metrics">
+                        <div class="research-tags">
 
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Region
-                                </p>
-
-                                <p class="metric-value">
-                                    Southeast Asia
-                                </p>
-
-                            </div>
-
-
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Coverage
-                                </p>
-
-                                <p class="metric-value">
-                                    Macro &amp; TMT
-                                </p>
-
-                            </div>
-
-
-                            <div class="feature-metric">
-
-                                <p class="metric-label">
-                                    Focus
-                                </p>
-
-                                <p class="metric-value">
-                                    Expansion Strategy
-                                </p>
-
-                            </div>
+                            <span>Southeast Asia</span>
+                            <span>Macro &amp; TMT</span>
+                            <span>Strategy</span>
 
                         </div>
 
 
-                        <div class="feature-involvement">
+                        <div class="research-body">
 
-                            <p class="feature-firm">
+                            <p class="research-firm">
                                 Huatai Securities · Investment Banking
                             </p>
 
@@ -548,8 +472,7 @@
                                 Researched macroeconomic conditions, technology-sector
                                 development and capital-markets activity across
                                 Southeast Asia, and synthesized findings into
-                                market-entry and expansion strategy materials
-                                for the deal team.
+                                market and expansion strategy materials.
                             </p>
 
                         </div>
@@ -856,10 +779,10 @@
                         <div class="experience-description">
 
                             <p>
-                                Supported an interim review and special audit
-                                engagements for state-owned and listed companies,
-                                covering audit working papers, related-party transactions,
-                                financial reporting and supporting audit procedures.
+                                Supported interim review and special audit engagements
+                                for state-owned and listed companies, covering audit
+                                working papers, related-party transactions, financial
+                                reporting and supporting audit procedures.
                             </p>
 
                         </div>
@@ -1072,7 +995,6 @@
             try {
 
                 await navigator.clipboard.writeText(email);
-
                 button.textContent = "Copied";
 
             } catch (error) {
@@ -1086,7 +1008,6 @@
                 document.body.appendChild(textarea);
 
                 textarea.select();
-
                 document.execCommand("copy");
 
                 document.body.removeChild(textarea);
