@@ -12,6 +12,7 @@
     --button-border: #cfd3d6;
 
     --card-bg: rgba(255, 255, 255, 0.32);
+    --research-card-bg: rgba(242, 244, 245, 0.42);
 
     --max-width: 1180px;
 }
@@ -69,7 +70,6 @@ a:hover {
     z-index: 100;
 
     background: var(--header-bg);
-
     border-bottom: 1px solid var(--header-line);
 
     backdrop-filter: blur(10px);
@@ -119,7 +119,7 @@ a:hover {
     display: flex;
     align-items: center;
 
-    gap: 31px;
+    gap: 27px;
 }
 
 .nav-links a {
@@ -170,19 +170,13 @@ a:hover {
 
 .hero {
     padding: 72px 0;
-
     border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
     display: grid;
-
-    grid-template-columns:
-        minmax(0, 1fr)
-        285px;
-
+    grid-template-columns: minmax(0, 1fr) 285px;
     align-items: start;
-
     gap: 78px;
 }
 
@@ -199,7 +193,6 @@ a:hover {
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.14em;
 }
 
@@ -207,7 +200,6 @@ a:hover {
     margin: 0;
 
     font-size: clamp(48px, 5.35vw, 66px);
-
     line-height: 1.03;
 
     letter-spacing: -0.038em;
@@ -217,7 +209,6 @@ a:hover {
 
 .hero h1 span {
     color: #7a7a7a;
-
     font-weight: 400;
 }
 
@@ -227,7 +218,6 @@ a:hover {
     color: var(--navy);
 
     font-size: 21px;
-
     font-weight: 400;
 
     line-height: 1.45;
@@ -239,7 +229,6 @@ a:hover {
     color: var(--muted);
 
     font-size: 16px;
-
     line-height: 1.55;
 }
 
@@ -271,7 +260,6 @@ a:hover {
     padding: 8px 16px;
 
     border: 1px solid var(--button-border);
-
     border-radius: 4px;
 
     background: var(--button-bg);
@@ -305,9 +293,6 @@ a:hover {
     transform: translateY(-1px);
 }
 
-
-/* Download CV */
-
 .hero-links .cv-button {
     background: var(--navy);
 
@@ -331,7 +316,6 @@ a:hover {
 
 .hero-photo-wrap {
     width: 285px;
-
     margin-top: 5px;
 }
 
@@ -342,7 +326,6 @@ a:hover {
     height: 330px;
 
     object-fit: cover;
-
     object-position: center 18%;
 }
 
@@ -353,7 +336,6 @@ a:hover {
 
 .section {
     padding: 58px 0;
-
     border-bottom: 1px solid var(--line);
 }
 
@@ -363,11 +345,7 @@ a:hover {
 
 .section-grid {
     display: grid;
-
-    grid-template-columns:
-        180px
-        1fr;
-
+    grid-template-columns: 180px 1fr;
     gap: 46px;
 }
 
@@ -377,19 +355,16 @@ a:hover {
     color: var(--text);
 
     font-size: 17px;
-
     line-height: 1.3;
 
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.11em;
 }
 
 .section-heading {
     padding-bottom: 19px;
-
     border-bottom: 1px solid var(--line);
 }
 
@@ -399,13 +374,11 @@ a:hover {
     color: var(--text);
 
     font-size: 18px;
-
     line-height: 1.3;
 
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.10em;
 }
 
@@ -418,7 +391,6 @@ a:hover {
     color: var(--muted);
 
     font-size: 15px;
-
     line-height: 1.6;
 }
 
@@ -437,7 +409,6 @@ a:hover {
     color: var(--muted);
 
     font-size: 17px;
-
     line-height: 1.7;
 }
 
@@ -445,7 +416,6 @@ a:hover {
     color: var(--text);
 
     font-size: 23px;
-
     line-height: 1.5;
 
     letter-spacing: -0.012em;
@@ -453,28 +423,26 @@ a:hover {
 
 
 /* =========================
-   Selected Transactions
+   Feature Sections
+   Transactions + Research
 ========================= */
 
-.transactions-section {
+.feature-section {
     padding-top: 62px;
     padding-bottom: 68px;
 }
 
-.transactions-heading {
+.feature-heading {
     margin-bottom: 30px;
 }
 
-.transactions-grid {
+.feature-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
 
-.transaction-card {
+.feature-card {
     min-width: 0;
 
     padding: 28px 30px 30px;
@@ -482,40 +450,39 @@ a:hover {
     background: var(--card-bg);
 
     border: 1px solid var(--line);
-
     border-radius: 4px;
 }
 
-.transaction-top {
-    display: flex;
+.research-card {
+    background: var(--research-card-bg);
+}
 
+.feature-top {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
 
     margin-bottom: 17px;
 }
 
-.transaction-category {
+.feature-category {
     margin: 0;
 
     color: var(--navy);
 
     font-size: 12px;
-
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.10em;
 }
 
-.transaction-card h3 {
+.feature-card h3 {
     margin: 0;
 
     color: var(--text);
 
     font-size: 24px;
-
     line-height: 1.25;
 
     font-weight: 600;
@@ -523,7 +490,7 @@ a:hover {
     letter-spacing: -0.016em;
 }
 
-.transaction-description {
+.feature-description {
     margin: 10px 0 0;
 
     min-height: 54px;
@@ -531,37 +498,32 @@ a:hover {
     color: var(--muted);
 
     font-size: 15px;
-
     line-height: 1.65;
 }
 
 
 /* =========================
-   Transaction Metrics
+   Feature Metrics
 ========================= */
 
-.transaction-metrics {
+.feature-metrics {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
     gap: 0;
 
     margin-top: 25px;
 
     border-top: 1px solid var(--line);
-
     border-bottom: 1px solid var(--line);
 }
 
-.transaction-metric {
+.feature-metric {
     padding: 15px 12px 15px 0;
 }
 
-.transaction-metric + .transaction-metric {
+.feature-metric + .feature-metric {
     padding-left: 16px;
-
     border-left: 1px solid var(--line);
 }
 
@@ -571,11 +533,9 @@ a:hover {
     color: var(--muted);
 
     font-size: 11px;
-
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.09em;
 }
 
@@ -585,7 +545,6 @@ a:hover {
     color: var(--text);
 
     font-size: 16px;
-
     font-weight: 600;
 
     line-height: 1.4;
@@ -593,30 +552,28 @@ a:hover {
 
 
 /* =========================
-   Transaction Involvement
+   Feature Involvement
 ========================= */
 
-.transaction-involvement {
+.feature-involvement {
     margin-top: 22px;
 }
 
-.transaction-involvement p {
+.feature-involvement p {
     margin: 0;
 
     color: var(--muted);
 
     font-size: 15px;
-
     line-height: 1.67;
 }
 
-.transaction-involvement .transaction-firm {
+.feature-involvement .feature-firm {
     margin-bottom: 8px;
 
     color: var(--text);
 
     font-size: 14px;
-
     font-weight: 600;
 }
 
@@ -635,7 +592,7 @@ a:hover {
 
     column-gap: 34px;
 
-    padding: 40px 0;
+    padding: 36px 0;
 
     border-bottom: 1px solid var(--line);
 
@@ -644,7 +601,6 @@ a:hover {
 
 .experience-item:last-child {
     border-bottom: none;
-
     padding-bottom: 4px;
 }
 
@@ -654,7 +610,6 @@ a:hover {
     color: #555c63;
 
     font-size: 16px;
-
     font-weight: 500;
 
     line-height: 1.4;
@@ -669,7 +624,6 @@ a:hover {
 
 .company-logo-column {
     width: 165px;
-
     min-height: 76px;
 
     display: flex;
@@ -690,7 +644,6 @@ a:hover {
     max-height: 72px;
 
     object-fit: contain;
-
     object-position: left top;
 
     mix-blend-mode: multiply;
@@ -715,7 +668,6 @@ a:hover {
     color: var(--text);
 
     font-size: 24px;
-
     font-weight: 600;
 
     line-height: 1.3;
@@ -725,7 +677,6 @@ a:hover {
 
 .company-short {
     color: var(--muted);
-
     font-weight: 400;
 }
 
@@ -735,7 +686,6 @@ a:hover {
     color: var(--text);
 
     font-size: 17px;
-
     line-height: 1.5;
 }
 
@@ -747,87 +697,17 @@ a:hover {
     font-size: 14px;
 }
 
-
-/* =========================
-   Experience Description
-========================= */
-
 .experience-description {
-    margin-top: 21px;
-
+    margin-top: 18px;
     max-width: 700px;
 }
 
 .experience-description p {
-    margin: 0 0 12px;
-
-    color: var(--muted);
-
-    font-size: 16px;
-
-    line-height: 1.68;
-}
-
-
-/* =========================
-   Selected Research
-========================= */
-
-.selected-block {
-    margin-top: 23px;
-
-    padding-top: 20px;
-
-    border-top: 1px solid var(--line);
-}
-
-.selected-label {
-    margin: 0 0 15px;
-
-    color: var(--muted);
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.12em;
-}
-
-.research-item {
-    padding: 16px 0;
-
-    border-top: 1px solid var(--line);
-}
-
-.research-item:first-of-type {
-    padding-top: 0;
-
-    border-top: none;
-}
-
-.research-item:last-child {
-    padding-bottom: 0;
-}
-
-.research-item h4 {
-    margin: 0 0 8px;
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    line-height: 1.4;
-}
-
-.research-description {
     margin: 0;
 
     color: var(--muted);
 
-    font-size: 15px;
-
+    font-size: 15.5px;
     line-height: 1.68;
 }
 
@@ -852,7 +732,6 @@ a:hover {
 
 .education-item:last-child {
     border-bottom: none;
-
     padding-bottom: 4px;
 }
 
@@ -862,7 +741,6 @@ a:hover {
     color: #555c63;
 
     font-size: 16px;
-
     font-weight: 500;
 
     line-height: 1.4;
@@ -876,7 +754,6 @@ a:hover {
     margin: 0;
 
     font-size: 24px;
-
     font-weight: 600;
 
     line-height: 1.35;
@@ -886,7 +763,6 @@ a:hover {
 
 .degree {
     margin: 7px 0 0;
-
     font-size: 17px;
 }
 
@@ -931,11 +807,9 @@ a:hover {
     color: var(--text) !important;
 
     font-size: 13px !important;
-
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.11em;
 }
 
@@ -952,7 +826,6 @@ a:hover {
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -1001,6 +874,10 @@ a:hover {
 
 @media (max-width: 950px) {
 
+    .nav-links {
+        gap: 20px;
+    }
+
     .hero-grid {
         grid-template-columns:
             minmax(0, 1fr)
@@ -1018,15 +895,15 @@ a:hover {
         height: 285px;
     }
 
-    .transactions-grid {
+    .feature-grid {
         gap: 18px;
     }
 
-    .transaction-card {
+    .feature-card {
         padding: 24px;
     }
 
-    .transaction-description {
+    .feature-description {
         min-height: 76px;
     }
 
@@ -1073,12 +950,11 @@ a:hover {
     }
 
     .nav-links {
-        gap: 16px;
+        gap: 15px;
     }
 
     .nav-links a {
         padding: 20px 0 18px;
-
         font-size: 12px;
     }
 
@@ -1094,13 +970,16 @@ a:hover {
         display: none;
     }
 
+    .nav-links a:nth-child(3) {
+        display: none;
+    }
+
     .hero {
         padding: 64px 0 68px;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
-
         gap: 36px;
     }
 
@@ -1135,13 +1014,13 @@ a:hover {
     }
 
     .section,
-    .experience-section {
+    .experience-section,
+    .feature-section {
         padding: 58px 0;
     }
 
     .section-grid {
         grid-template-columns: 1fr;
-
         gap: 22px;
     }
 
@@ -1155,44 +1034,41 @@ a:hover {
 
     .section-intro {
         font-size: 14px;
-
         width: 100%;
     }
 
 
-    /* Transactions */
+    /* Features */
 
-    .transactions-grid {
+    .feature-grid {
         grid-template-columns: 1fr;
-
         gap: 18px;
     }
 
-    .transaction-card {
+    .feature-card {
         padding: 24px 22px;
     }
 
-    .transaction-card h3 {
+    .feature-card h3 {
         font-size: 22px;
     }
 
-    .transaction-description {
+    .feature-description {
         min-height: 0;
     }
 
-    .transaction-metrics {
+    .feature-metrics {
         grid-template-columns: 1fr;
     }
 
-    .transaction-metric {
+    .feature-metric {
         padding: 12px 0;
     }
 
-    .transaction-metric + .transaction-metric {
+    .feature-metric + .feature-metric {
         padding-left: 0;
 
         border-left: none;
-
         border-top: 1px solid var(--line);
     }
 
@@ -1209,19 +1085,16 @@ a:hover {
 
     .experience-date {
         padding-top: 0;
-
         font-size: 15px;
     }
 
     .company-logo-column {
         width: 150px;
-
         min-height: auto;
     }
 
     .company-logo {
         max-width: 145px;
-
         max-height: 70px;
     }
 
@@ -1257,7 +1130,6 @@ a:hover {
 
     .additional-grid {
         grid-template-columns: 1fr;
-
         gap: 32px;
     }
 
