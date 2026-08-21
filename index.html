@@ -11,7 +11,7 @@
         content="Huanzhe (Mike) Yuan — Corporate &amp; Investment Banking, Credit, and Capital Markets."
     >
 
-    <link rel="stylesheet" href="style.css?v=20260821-5">
+    <link rel="stylesheet" href="style.css?v=20260821-6">
 </head>
 
 <body>
@@ -80,11 +80,19 @@
                             LinkedIn
                         </a>
 
-                        <a href="mailto:mikehzyuan01@outlook.com">
+                        <button
+                            type="button"
+                            class="email-copy-button"
+                            data-email="yuanhuanzhe@gmail.com"
+                        >
                             Email
-                        </a>
+                        </button>
 
-                        <a href="assets/resume.pdf" target="_blank">
+                        <a
+                            href="assets/resume.pdf"
+                            target="_blank"
+                            class="cv-button"
+                        >
                             Download CV
                         </a>
 
@@ -173,9 +181,7 @@
                 <div class="transactions-grid">
 
 
-                    <!-- =========================
-                         Hong Kong TMT IPO
-                    ========================== -->
+                    <!-- Hong Kong TMT IPO -->
                     <article class="transaction-card">
 
                         <div class="transaction-top">
@@ -260,10 +266,7 @@
                     </article>
 
 
-                    <!-- =========================
-                         H-to-A Renewable Energy
-                         Spin-off IPO
-                    ========================== -->
+                    <!-- H-to-A Renewable Energy Spin-off -->
                     <article class="transaction-card">
 
                         <div class="transaction-top">
@@ -366,7 +369,6 @@
                 </div>
 
 
-                <!-- MUFG -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -418,9 +420,7 @@
                 </div>
 
 
-                <!-- =========================
-                     S&P Global
-                ========================== -->
+                <!-- S&P Global -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -481,9 +481,7 @@
                 </article>
 
 
-                <!-- =========================
-                     Huatai Securities
-                ========================== -->
+                <!-- Huatai -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -545,9 +543,7 @@
                 </article>
 
 
-                <!-- =========================
-                     Bank of America
-                ========================== -->
+                <!-- Bank of America -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -643,9 +639,7 @@
                 </article>
 
 
-                <!-- =========================
-                     CICC
-                ========================== -->
+                <!-- CICC -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -705,9 +699,7 @@
                 </article>
 
 
-                <!-- =========================
-                     EY
-                ========================== -->
+                <!-- EY -->
                 <article class="experience-item">
 
                     <div class="experience-date">
@@ -828,7 +820,7 @@
                 </article>
 
 
-                <!-- CUHK-Shenzhen -->
+                <!-- CUHK Shenzhen -->
                 <article class="education-item">
 
                     <div class="education-date">
@@ -940,9 +932,13 @@
                     LinkedIn
                 </a>
 
-                <a href="mailto:mikehzyuan01@outlook.com">
-                    Email
-                </a>
+                <button
+                    type="button"
+                    class="footer-email-copy"
+                    data-email="yuanhuanzhe@gmail.com"
+                >
+                    yuanhuanzhe@gmail.com
+                </button>
 
                 <a href="#top">
                     Back to top ↑
@@ -953,6 +949,67 @@
         </div>
 
     </footer>
+
+
+    <!-- =========================
+         Copy Email Script
+    ========================== -->
+    <script>
+
+        async function copyEmail(button) {
+
+            const email = button.dataset.email;
+            const originalText = button.textContent.trim();
+
+            try {
+
+                await navigator.clipboard.writeText(email);
+
+                button.textContent = "Copied";
+
+            } catch (error) {
+
+                const textarea = document.createElement("textarea");
+
+                textarea.value = email;
+
+                textarea.style.position = "fixed";
+                textarea.style.opacity = "0";
+
+                document.body.appendChild(textarea);
+
+                textarea.select();
+
+                document.execCommand("copy");
+
+                document.body.removeChild(textarea);
+
+                button.textContent = "Copied";
+
+            }
+
+            setTimeout(() => {
+
+                button.textContent = originalText;
+
+            }, 1600);
+
+        }
+
+
+        document.querySelectorAll(
+            ".email-copy-button, .footer-email-copy"
+        ).forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                copyEmail(button);
+
+            });
+
+        });
+
+    </script>
 
 
 </body>
