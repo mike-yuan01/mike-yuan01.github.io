@@ -40,6 +40,10 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+button {
+    font: inherit;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -95,6 +99,7 @@ a:hover {
     content: "";
 
     position: absolute;
+
     left: 0;
     bottom: -7px;
 
@@ -127,8 +132,7 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
 
-    transition:
-        color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a::after {
@@ -166,6 +170,7 @@ a:hover {
 
 .hero {
     padding: 72px 0;
+
     border-bottom: 1px solid var(--line);
 }
 
@@ -212,6 +217,7 @@ a:hover {
 
 .hero h1 span {
     color: #7a7a7a;
+
     font-weight: 400;
 }
 
@@ -253,7 +259,8 @@ a:hover {
     margin-top: 31px;
 }
 
-.hero-links a {
+.hero-links a,
+.email-copy-button {
     display: inline-flex;
 
     align-items: center;
@@ -278,6 +285,8 @@ a:hover {
 
     letter-spacing: 0.01em;
 
+    cursor: pointer;
+
     transition:
         background-color 0.18s ease,
         border-color 0.18s ease,
@@ -285,7 +294,8 @@ a:hover {
         transform 0.18s ease;
 }
 
-.hero-links a:hover {
+.hero-links a:hover,
+.email-copy-button:hover {
     background: #ffffff;
 
     border-color: #aeb5bb;
@@ -296,9 +306,9 @@ a:hover {
 }
 
 
-/* Download CV as primary button */
+/* Download CV */
 
-.hero-links a:last-child {
+.hero-links .cv-button {
     background: var(--navy);
 
     border-color: var(--navy);
@@ -306,7 +316,7 @@ a:hover {
     color: #ffffff;
 }
 
-.hero-links a:last-child:hover {
+.hero-links .cv-button:hover {
     background: #22374e;
 
     border-color: #22374e;
@@ -321,6 +331,7 @@ a:hover {
 
 .hero-photo-wrap {
     width: 285px;
+
     margin-top: 5px;
 }
 
@@ -490,6 +501,7 @@ a:hover {
     color: var(--navy);
 
     font-size: 12px;
+
     font-weight: 600;
 
     text-transform: uppercase;
@@ -678,6 +690,7 @@ a:hover {
     max-height: 72px;
 
     object-fit: contain;
+
     object-position: left top;
 
     mix-blend-mode: multiply;
@@ -944,7 +957,8 @@ a:hover {
 }
 
 .footer-content p,
-.footer-content a {
+.footer-content a,
+.footer-email-copy {
     margin: 0;
 
     color: var(--muted);
@@ -955,10 +969,28 @@ a:hover {
 .footer-links {
     display: flex;
 
+    align-items: center;
+
     gap: 24px;
 }
 
 .footer-links a:hover {
+    color: var(--text);
+}
+
+.footer-email-copy {
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.footer-email-copy:hover {
     color: var(--text);
 }
 
@@ -1093,7 +1125,8 @@ a:hover {
         gap: 9px;
     }
 
-    .hero-links a {
+    .hero-links a,
+    .email-copy-button {
         min-height: 38px;
 
         padding: 8px 13px;
